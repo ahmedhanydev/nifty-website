@@ -33,6 +33,13 @@
   .faq__image {
     display: none;
   }
+  .faq__right {
+    transform: translateX(0px) !important;
+    -webkit-transform: translateX(0px) !important;
+    -moz-transform: translateX(0px) !important;
+    -ms-transform: translateX(0px) !important;
+    -o-transform: translateX(0px) !important;
+  }
 }
 
 .faq__right {

@@ -253,47 +253,6 @@ const FAQ = () => {
             </ul>
           </motion.div>
         </div>
-        <div id="faqFramByFrame" className="frame-by-frame">
-          <img src="./assets/svg/frameByFrameWhite/02.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/03.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/04.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/05.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/06.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/07.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/08.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/09.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/10.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/11.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/12.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/13.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/14.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/15.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/16.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/17.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/18.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/19.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/20.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/21.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/22.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/23.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/24.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/25.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/26.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/27.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/28.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/29.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/30.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/31.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/32.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/33.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/34.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/35.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/36.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/37.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/38.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/39.svg" alt="" />
-          <img src="./assets/svg/frameByFrameWhite/40.svg" alt="" />
-        </div>
       </section>
     </>
   );
