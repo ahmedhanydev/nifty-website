@@ -1,0 +1,331 @@
+.rarity {
+  position: relative;
+  width: 100%;
+  padding: 180px 0 192px;
+  overflow-x: hidden;
+}
+@media (max-width: 768px) {
+  .rarity {
+    padding: 100px 0 20px;
+  }
+  .rarity::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        1.83deg,
+        #1a1c28 1.76%,
+        rgba(26, 28, 40, 0) 23.4%
+      ),
+      linear-gradient(90deg, rgba(0, 0, 0, 0.2) 38.51%, rgba(0, 0, 0, 0) 50%),
+      linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 28.57%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+}
+
+.rarity__background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+@media (max-width: 1440px) {
+  .rarity__background {
+    object-position: 80% center;
+    object-fit: cover;
+  }
+}
+
+.rarity__container {
+  max-width: 1308px;
+  position: relative;
+  z-index: 3;
+}
+
+.rarity__title {
+  font-family: "KronaOne", sans-serif;
+  font-weight: 400;
+  font-size: 63.1395px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: #ffffff;
+  -webkit-text-stroke: 1.1648px #ffffff;
+}
+@media (max-width: 768px) {
+  .rarity__title {
+    text-align: center;
+    font-size: 45px;
+  }
+}
+@media (max-width: 395px) {
+  .rarity__title {
+    font-size: 40px;
+  }
+}
+
+.rarity__cards {
+  margin-top: 20px;
+  max-width: 643px;
+  display: flex;
+}
+@media (max-width: 768px) {
+  .rarity__cards {
+    margin-top: 27px;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+}
+
+.rarity__col {
+  display: flex;
+}
+.rarity__col + .rarity__col {
+  margin-left: 16px;
+}
+@media (max-width: 768px) {
+  .rarity__col + .rarity__col {
+    margin-left: 0;
+    margin-top: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .rarity__col {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.rarity__line:first-child {
+  margin-top: -32px;
+}
+@media (max-width: 768px) {
+  .rarity__line:first-child {
+    margin-top: 0;
+  }
+}
+.rarity__line + .rarity__line {
+  margin-left: 16px;
+}
+
+.rarity-card {
+  width: 155px;
+  min-height: 196.42px;
+  border: 3px solid #000000;
+  box-shadow: 4.09722px 6.55556px 0px #000000;
+  border-radius: 21.5276px;
+  background: rgba(44, 45, 49, 0.8);
+  backdrop-filter: blur(44px);
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .rarity-card {
+    max-width: 326px;
+  }
+}
+@media (max-width: 434px) {
+  .rarity-card {
+    max-width: 271px;
+    width: 125px;
+    min-height: 160px;
+  }
+}
+.rarity-card-big {
+  width: 302px;
+  min-height: 444px;
+  border: 4px solid #111111;
+  border-radius: 26.9095px;
+}
+@media (max-width: 768px) {
+  .rarity-card-big {
+    width: 326px;
+  }
+}
+@media (max-width: 434px) {
+  .rarity-card-big {
+    width: 271px;
+    min-height: 380px;
+  }
+}
+.rarity-card + .rarity-card {
+  margin-top: 12px;
+}
+
+.rarity-card__value {
+  font-family: "Mazzard", sans-serif;
+  font-weight: 700;
+  font-weight: bold;
+  line-height: 1.21;
+  font-size: 27px;
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 434px) {
+  .rarity-card__value {
+    font-size: 21px;
+  }
+  .rarity__cards {
+    margin-right: 10px;
+  }
+}
+
+.rarity-card__name {
+  font-family: "Mazzard", sans-serif;
+  font-weight: 700;
+  font-weight: bold;
+  line-height: 1.21;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.52);
+  text-align: center;
+}
+@media (max-width: 434px) {
+  .rarity-card__name {
+    font-size: 13px;
+  }
+}
+
+.rarity-card__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rarity-card__back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  object-position: center bottom;
+  object-fit: contain;
+}
+
+.rarity-card {
+  padding-top: 30px;
+}
+.rarity-card .rarity-card__value {
+  margin-top: 13px;
+}
+@media (max-width: 434px) {
+  .rarity-card .rarity-card__value {
+    margin-top: 8px;
+  }
+}
+
+.rarity-card__list {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 434px) {
+  .rarity-card__list {
+    margin-top: 24px;
+  }
+}
+
+.rarity-card__item {
+  display: flex;
+  align-items: center;
+  font-family: "Mazzard", sans-serif;
+  font-weight: 400;
+  font-size: 16.1457px;
+  line-height: 1.1875;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.rarity-card__item + .rarity-card__item {
+  margin-top: 14px;
+}
+@media (max-width: 434px) {
+  .rarity-card__item + .rarity-card__item {
+    margin-top: 11px;
+  }
+}
+@media (max-width: 434px) {
+  .rarity-card__item {
+    font-size: 13px;
+  }
+}
+.rarity-card__item::before {
+  content: "";
+  display: block;
+  width: 9.69px;
+  height: 9.69px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #fff;
+  margin-right: 24px;
+}
+.rarity-card__item.blue::before {
+  background: #5428d1;
+}
+.rarity-card__item.violet::before {
+  background: #952ed1;
+}
+.rarity-card__item.yellow::before {
+  background: #f29d38;
+}
+.rarity-card__item.orange::before {
+  background: #e56249;
+}
+
+.rarity-card-big {
+  padding: 40px 54px;
+}
+@media (max-width: 434px) {
+  .rarity-card-big {
+    padding-left: 42px;
+    padding-top: 32px;
+  }
+  .rarity-card-big .rarity-card__content {
+    text-align: right;
+    align-items: flex-start;
+  }
+}
+.rarity-card-big .rarity-card__value {
+  font-size: 37.6732px;
+  letter-spacing: 0.04em;
+}
+@media (max-width: 434px) {
+  .rarity-card-big .rarity-card__value {
+    font-size: 30.9px;
+  }
+}
+.rarity-card-big .rarity-card__name {
+  font-size: 19.3748px;
+  margin-top: 3px;
+}
+@media (max-width: 434px) {
+  .rarity-card-big .rarity-card__name {
+    font-size: 15.64px;
+  }
+}
+@media (max-width: 415px) {
+  /* .rarity__cards {
+    display: flex;
+    justify-content: start;
+  } */
+
+  /* .rarity__title {
+    padding-left: 100px;
+  } */
+  /* .rarity__col {
+    margin-top: 50px;
+    margin-right: 270px;
+    width: 100%;
+    justify-content: start;
+  } */
+}

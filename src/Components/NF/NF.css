@@ -1,0 +1,255 @@
+.nf {
+  width: 100%;
+  position: relative;
+  width: 100%;
+  padding-bottom: 35px;
+  background: #1a1c28;
+  overflow-x: hidden;
+}
+@media (max-width: 991px) {
+  .nf {
+    padding-bottom: 12px;
+  }
+}
+
+.nf__background {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  max-height: 823px;
+}
+@media (max-width: 1440px) {
+  .nf__background {
+    object-fit: cover;
+    object-position: 25% top;
+  }
+}
+@media (max-width: 991px) {
+  .nf__background {
+    max-height: 100%;
+  }
+}
+
+.nf__container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 190px;
+  display: flex;
+  position: relative;
+  z-index: 3;
+}
+@media (max-width: 991px) {
+  .nf__container {
+    padding-top: 90px;
+    flex-direction: column;
+  }
+}
+
+.nf__left {
+  flex-grow: 1;
+  padding-right: 20px;
+  display: flex;
+}
+@media (max-width: 991px) {
+  .nf__left {
+    order: 2;
+    padding-right: 0;
+  }
+}
+
+.nf__rabbits {
+  margin-top: auto;
+  display: flex;
+  max-width: 818px;
+  margin-left: -100px;
+  position: relative;
+}
+@media (max-width: 1440px) {
+  .nf__rabbits {
+    margin-left: 0;
+  }
+}
+@media (max-width: 991px) {
+  .nf__rabbits {
+    max-width: 450px;
+    margin: 117px auto 0;
+  }
+}
+@media (max-width: 565px) {
+  .nf__rabbits {
+    margin-top: 90px;
+  }
+}
+
+.nf__rabbit {
+  position: relative;
+}
+
+.nf__rabbit_01 {
+  margin-top: 12px;
+  max-width: 57.819%;
+  z-index: 3;
+}
+
+.nf__rabbit_02 {
+  max-width: 60.24%;
+  margin-left: -8%;
+  z-index: 4;
+}
+
+.nf__rabbit_01_gif {
+  position: absolute;
+  background: transparent;
+  z-index: 3;
+  left: 30.8%;
+  top: -6.5%;
+  max-width: 45%;
+}
+@media (max-width: 991px) {
+  .nf__rabbit_01_gif {
+    top: -5.5%;
+  }
+}
+@media (max-width: 359px) {
+  .nf__rabbit_01_gif {
+    top: -4.5%;
+  }
+}
+
+.nf__rabbit_02_gif {
+  position: absolute;
+  background: transparent;
+  z-index: 5;
+  left: 25.5%;
+  top: 38%;
+  max-width: 46%;
+}
+
+.nf__content {
+  min-width: 350px;
+  flex-basis: 35%;
+  flex-shrink: 0;
+  padding-right: 20px;
+  padding-bottom: 140px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 991px) {
+  .nf__content {
+    order: 1;
+    text-align: center;
+    margin: 0 auto;
+    flex-basis: auto;
+    padding-bottom: 0;
+    padding-right: 0;
+    min-width: auto;
+  }
+}
+
+.nf__title {
+  max-width: 270px;
+  position: relative;
+  z-index: 3;
+  font-family: "KronaOne", sans-serif;
+  font-weight: 400;
+  font-size: 61px;
+  line-height: 1.18;
+  text-transform: uppercase;
+  color: #ffffff;
+  -webkit-text-stroke: 1px #ffffff;
+}
+@media (max-width: 1095px) {
+  .nf__title {
+    font-size: 55px;
+  }
+}
+@media (max-width: 991px) {
+  .nf__title {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .nf__title {
+    font-size: 49px;
+  }
+}
+@media (max-width: 395px) {
+  .nf__title {
+    font-size: 40px;
+  }
+}
+
+.nf__text {
+  margin-top: 25px;
+  max-width: 420px;
+  position: relative;
+  z-index: 2;
+  font-family: "ComicSans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.nf__text::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  filter: blur(150px);
+  background: black;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 1095px) {
+  .nf__text {
+    font-size: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .nf__text {
+    padding: 0 25px;
+  }
+}
+@media (max-width: 768px) {
+  .nf__text {
+    font-size: 17px;
+  }
+}
+
+.nf__btn {
+  margin-top: 25px;
+  width: 265px;
+  height: 72px;
+  box-shadow: 5px 8px 0px #233356;
+  position: relative;
+  z-index: 3;
+}
+.nf__btn:hover {
+  transform: translate(5px, 8px);
+  box-shadow: 0px 0px 0px #233356;
+}
+@media (max-width: 1095px) {
+  .nf__btn {
+    width: 235px;
+    height: 56px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 0px #233356;
+  }
+  .nf__btn > span {
+    font-size: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .nf__btn {
+    margin: 20px auto 0;
+  }
+}
